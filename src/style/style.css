@@ -4,3 +4,11 @@
   text-align: center;
   padding: 1rem;
 }
+.selected{
+  background-color: pink;
+}
+.menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 3rem;
+}
