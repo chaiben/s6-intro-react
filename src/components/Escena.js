@@ -1,4 +1,5 @@
 import React from "react";
+import { P, Menu } from "./style";
 
 export default function Escena(props){
   const [phraseOn, setPhraseOn] = React.useState(0);
@@ -14,18 +15,18 @@ export default function Escena(props){
   const phrases = props.phrases.map(
     (phrase, index) => {
       const className = index === phraseOn ? "phrase selected" : "phrase";
-    return <p 
+    return <P 
       className= {className} 
       key={`phrase${index}`} 
-      >{phrase}</p>
+      >{phrase}</P>
     });
 
   return (
     <div>
-      <div className="menu">
+      <Menu>
         <button onClick={() => changeMessage(-1)}>Anterior</button>
         <button onClick={() => changeMessage(+1)}>Siguiente</button>
-      </div>
+      </Menu>
       {phrases}
     </div>
   );
