@@ -17,3 +17,10 @@ export const Menu = styled.div`
   grid-template-columns: auto auto;
   height: 3rem;
 `;
+
+export const Container = styled.div`
+  margin:0;
+  padding:0;
+  background-image: url(${props => props.img});
+  height: 100%;
+`;
