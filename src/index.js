@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./style/style.css";
 
 // Components
 import { dataPhrase } from "./data";
